@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const Home = ({ categories = [] }) => (
-  <div>
+const Home = props => (
+  <React.Fragment>
+    <title>I ❤️ x0</title>
     <h1>Static site built with Contentful and x0!</h1>
-  </div>
+  </React.Fragment>
 );
 
 export default Home;

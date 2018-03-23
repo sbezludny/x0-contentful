@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && mkdir dist && x0 build src/App.js --out-dir dist --static"
+    "dev": "x0 dev src/App.js --config webpack.config.js",
+    "build": "rm -rf dist && mkdir dist && x0 build src/App.js --out-dir dist --static --config webpack.config.js",
+    "deploy": "netlifyctl deploy -b dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@compositor/x0": "^4.0.1"
+    "@compositor/x0": "^4.0.1",
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "awesome-typescript-loader": "^4.0.1",
+    "typescript": "^2.7.2"
   },
   "dependencies": {
     "contentful": "^5.1.3",
@@ -21,6 +27,10 @@
     "react-router-dom": "^4.2.2"
   },
   "x0": {
-    "routes": ["/", "/categories", "/courses"]
+    "routes": [
+      "/",
+      "/categories",
+      "/courses"
+    ]
   }
 }
