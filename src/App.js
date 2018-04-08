@@ -20,8 +20,8 @@ const App = props => (
     <React.Fragment>
       <nav>
         <Nav exact to="/">Home</Nav>
-        <Nav exact to="/categories">Categories</Nav>
-        <Nav exact to="/courses">Courses</Nav>
+        <Nav exact to="/categories">Categories from Contentful</Nav>
+        <Nav exact to="/courses">Courses from Contentful</Nav>
       </nav>
       <Route exact path="/" render={() => <Home {...props} />} />
       <Route

@@ -1,9 +1,13 @@
 import React from 'react';
+import readme from '../README.md';
+import Markdown from 'react-markdown';
 
 const Home = props => (
   <React.Fragment>
     <title>I ❤️ x0</title>
-    <h1>Static site built with Contentful and x0!</h1>
+    <Markdown 
+      source={readme}
+    />
   </React.Fragment>
 );
 
