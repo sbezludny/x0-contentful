@@ -14,13 +14,29 @@ Getting Started
 
 Installation
 
-`$ git clone https://github.com/sbezludny/x0-contentful.git`
+Clone the repository
 
-`$ npm i` - to install the dependencies
+```
+$ git clone https://github.com/sbezludny/x0-contentful.git
+```
 
-`$ npm run dev` - starts development mode on http://localhost:8000
+Install the dependencies
 
-`$ npm run build` - compiles the application to `./dist`
+```bash
+$ npm i
+```
+
+To start development mode on http://localhost:8000
+
+```
+$ npm run dev
+```
+
+Render static HTML
+
+```
+$ npm run build
+```
 
 ## Styling
 
@@ -50,3 +66,4 @@ export default ThemeProvider;
 
 X0 Supports async data fetching using getInitialProps hook. It's inspired by next.js with one limitation: for now, it's only supported on the top level and cannot be used in the children components.
 In the given example Contentful is used as a data provider. 
+
