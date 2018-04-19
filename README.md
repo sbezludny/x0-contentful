@@ -1,8 +1,8 @@
-# X0-Contenful
+# x0-Contentful
 
-Project is created as an example of usage x0 - Zero-config React development environment and static site generator.
+This project was created as an example of usage x0 - a Zero-config React development environment and static site generator.
 
-The website shows the various examples of integration and extension default capabilities of x0:
+The website shows various examples of the default integration and extension capabilities of x0:
 
 * Theming with styled-components
 * Multi pages with react-router
@@ -10,37 +10,37 @@ The website shows the various examples of integration and extension default capa
 * Integration with Contentful
 * Custom webpack config
 
-Getting Started
+##Getting Started
 
-Installation
+###Installation
 
-Clone the repository
+Clone the repository:
 
 ```
 $ git clone https://github.com/sbezludny/x0-contentful.git
 ```
 
-Install the dependencies
+Install the dependencies:
 
 ```bash
 $ npm i
 ```
 
-To start development mode on http://localhost:8000
+Start development mode on http://localhost:8000 :
 
 ```
 $ npm run dev
 ```
 
-Render static HTML
+Render static HTML:
 
 ```
 $ npm run build
 ```
 
-## Styling
+### Styling
 
-X0 Supports styled-components therefore any framework that uses styled-components also integrates seamlessly.
+x0 supports styled-components; therefore any framework that uses styled-components will be integrated seamlessly.
 
 ```jsx
 import React from 'react';
@@ -64,6 +64,5 @@ export default ThemeProvider;
 
 ## Data fetching and management
 
-X0 Supports async data fetching using getInitialProps hook. It's inspired by next.js with one limitation: for now, it's only supported on the top level and cannot be used in the children components.
-In the given example Contentful is used as a data provider. 
-
+x0 supports async data fetching using `getInitialProps` hook. It's inspired by next.js with one limitation: for now, it's only supported on the top level and cannot be used in child components.
+In this given example, Contentful is used as a data provider. 
