@@ -10,9 +10,9 @@ The website shows various examples of the default integration and extension capa
 * Integration with Contentful
 * Custom webpack config
 
-##Getting Started
+## Getting Started
 
-###Installation
+### Installation
 
 Clone the repository:
 
